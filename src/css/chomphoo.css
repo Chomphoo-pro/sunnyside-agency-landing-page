@@ -1,0 +1,53 @@
+@import url("fonts.css");
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.p {
+    display: flex;
+    width: 100vw;
+}
+
+#header {
+    width: 100%;
+}
+
+#logo {
+    position: absolute;
+    top: 2rem;
+    left: 1.5rem;
+}
+
+menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+#menu {
+    position: absolute;
+    top: 2.2rem;
+    right: 1.5rem;
+}
+
+h1 {
+    white-space: normal;
+    font-family: Fraunces;
+    font-weight: 900;
+    letter-spacing: 6.25px;
+    font-size: 40px;
+    text-align: center;
+    margin-top: auto;
+    height: auto;
+    line-height: 1;
+    color: white;
+    position: absolute;
+    top: 140px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
