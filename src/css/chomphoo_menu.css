@@ -1,5 +1,7 @@
 body {
-  background-color: lightcoral;
+  padding: 0;
+  margin: 0;
+  background-color: lightsalmon;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -15,7 +17,8 @@ a {
   margin: 0;
   padding: 0;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
   padding: 2rem;
   clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%);
   transition: 0.15s clip-path ease-in;
@@ -24,9 +27,35 @@ a {
 
 
 #menu{
+  margin-top: 1rem;
+  margin-right: 1rem;
+  display: unset;
   cursor: pointer;
 }
 
 #menu.active + .box{
   clip-path: polygon(92.7% 7.29%,100% 0%,100% 100%,0% 100%,0% 7.29%);
+}
+
+@media screen and (min-width: 900px) {
+  #menu + .box{
+    clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 100% 0%)!important;
+    margin: 0;
+    padding: 0;
+  }
+
+  menu {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+  }
+
+  #menu{
+    display: none;
+  }
+
+  menu > li {
+    margin: 1rem;
+  }
+  
 }
